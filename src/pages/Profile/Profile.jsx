@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import CreatePostForm from './../../component/posts/CreatePostForm';
-import PostListing from '../../component/posts/postListing';
+import PostListing from '../../component/posts/PostListing';
 import { useParams } from 'react-router-dom';
 import { AuthContext } from './../../context/AuthContext';
 import { Helmet } from 'react-helmet';

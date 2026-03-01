@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import CreatePostForm from "../../component/posts/CreatePostForm";
-import PostListing from "../../component/posts/postListing";
+import PostListing from "../../component/posts/PostListing";
 
 
 
