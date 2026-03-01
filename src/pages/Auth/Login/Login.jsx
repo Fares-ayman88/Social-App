@@ -58,7 +58,7 @@ export default function Login() {
               variant="bordered"
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2]",
               }}
               {...register("email")}
             />
@@ -73,7 +73,7 @@ export default function Login() {
               variant="bordered"
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2]",
               }}
               {...register("password")}
             />

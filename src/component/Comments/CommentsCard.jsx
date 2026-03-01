@@ -24,13 +24,13 @@ export default function CommentsCard({ comment, postId }) {
       commentImage={commentImage}
       />
       <CardBody className="pt-0 pb-3 px-2">
-        <div className="rounded-xl border border-[#d7e8e2] bg-[rgba(255,255,255,0.68)] px-4 py-3">
-          <p className="text-[15px] leading-7 text-[#184038]">{commentBody}</p>
+        <div className="rounded-xl border border-[#d2e0fb] bg-[rgba(255,255,255,0.68)] px-4 py-3">
+          <p className="text-[15px] leading-7 text-[#1a2d52]">{commentBody}</p>
           {commentImage && (
             <Image
               src={commentImage}
               alt="Comment image"
-              className="rounded-xl object-cover mt-3 border border-[#d5e6df]"
+              className="rounded-xl object-cover mt-3 border border-[#d2e1fb]"
             />
           )}
         </div>

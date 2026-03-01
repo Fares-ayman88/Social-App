@@ -18,9 +18,11 @@
   font-weight: 800;
   letter-spacing: 0.01em;
   text-transform: uppercase;
-  color: #115e59;
-  background: #d9f3eb;
-  border: 1px solid #c1e8db;
+  color: #1d4ed8;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid #ccdaf8;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.12);
+  backdrop-filter: blur(10px);
   border-radius: 999px;
   padding: 0.28rem 0.68rem;
 }

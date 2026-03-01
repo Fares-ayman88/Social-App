@@ -247,19 +247,19 @@ export default function AppCard({
             radius="full"
             src={authorPhoto}
             width={isPost ? 80 : 50}
-            className="border border-[#cfe3dc] object-cover"
+            className="border border-[#d3e0fb] object-cover"
           />
           <div className="flex flex-col">
-            <p className={`${isPost ? "text-lg font-bold" : "text-md"} capitalize text-[#10362f]`}>
+            <p className={`${isPost ? "text-lg font-bold" : "text-md"} capitalize text-[#14274a]`}>
               {authorId ? (
-                <Link to={`/profile/${authorId}`} className="hover:text-[#0f766e] transition-colors">
+                <Link to={`/profile/${authorId}`} className="hover:text-[#2563eb] transition-colors">
                   {authorName}
                 </Link>
               ) : (
                 authorName
               )}
             </p>
-            <p className="text-small text-[#5f786e]">{createdAt}</p>
+            <p className="text-small text-[#61779b]">{createdAt}</p>
           </div>
         </div>
 
@@ -311,10 +311,10 @@ export default function AppCard({
         }}
         placement="center"
       >
-        <ModalContent className="surface-card border border-[#d6e7e1]">
+        <ModalContent className="surface-card border border-[#d2e1fb]">
           {(onClose) => (
             <>
-              <ModalHeader className="text-[#12382f]">{`Edit ${entityLabel}`}</ModalHeader>
+              <ModalHeader className="text-[#14274a]">{`Edit ${entityLabel}`}</ModalHeader>
               <ModalBody>
                 <Textarea
                   minRows={5}
@@ -324,8 +324,8 @@ export default function AppCard({
                   placeholder={`Update your ${entityLabel}`}
                   classNames={{
                     inputWrapper:
-                      "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-2xl px-2 data-[hover=true]:border-[#b8d9ce]",
-                    input: "text-[#14352f] text-[15px]",
+                      "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-2xl px-2 data-[hover=true]:border-[#b4cbf2]",
+                    input: "text-[#15284a] text-[15px]",
                   }}
                 />
 
@@ -362,7 +362,7 @@ export default function AppCard({
                   <Image
                     src={editedImagePreview}
                     alt={`Edited ${entityLabel} preview`}
-                    className="rounded-xl object-cover mt-2 border border-[#d5e6df]"
+                    className="rounded-xl object-cover mt-2 border border-[#d2e1fb]"
                   />
                 )}
               </ModalBody>
@@ -375,7 +375,7 @@ export default function AppCard({
                   onPress={handleEditSubmit}
                   isLoading={isEditing}
                   isDisabled={isEditing}
-                  className="chip-button bg-[linear-gradient(135deg,#0f766e_0%,#14b8a6_100%)] text-white border-0"
+                  className="chip-button bg-[linear-gradient(135deg,#2563eb_0%,#60a5fa_100%)] text-white border-0"
                 >
                   Save
                 </Button>

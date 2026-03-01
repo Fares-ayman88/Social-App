@@ -44,7 +44,7 @@ export default function PostCard({ post ,isDetails}) {
       />
       <Divider className="soft-divider" />
       <CardBody className="py-2">
-        <p className="mb-4 text-[15px] leading-7 text-[#14332d] whitespace-pre-wrap">{post.body}</p>
+        <p className="mb-4 text-[15px] leading-7 text-[#172b4f] whitespace-pre-wrap">{post.body}</p>
 
     { postHasImage && <Image
           alt={user.name}
@@ -52,12 +52,12 @@ export default function PostCard({ post ,isDetails}) {
           radius="sm"
           src={post.image}
           width={"100%"}
-          className="object-cover rounded-xl border border-[#d8e8e2]"
+          className="object-cover rounded-xl border border-[#cfddf5]"
         />}
       </CardBody>
       <Divider className="soft-divider" />
       <CardFooter className="flex justify-between gap-2">
-        <button className="chip-button btn-quiet px-4 py-2 text-sm font-semibold text-[#255149] flex items-center gap-2">
+        <button className="chip-button btn-quiet px-4 py-2 text-sm font-semibold text-[#295084] flex items-center gap-2">
           <FaRegThumbsUp />
           Like
         </button>
@@ -65,14 +65,14 @@ export default function PostCard({ post ,isDetails}) {
           onClick={() => setShowCommentForm((prev) => !prev)}
           className={`chip-button px-4 py-2 text-sm font-semibold flex items-center gap-2 ${
             showCommentForm
-              ? "bg-[linear-gradient(135deg,#0f766e_0%,#14b8a6_100%)] text-white border-0"
-              : "btn-quiet text-[#255149]"
+              ? "bg-[linear-gradient(135deg,#2563eb_0%,#38bdf8_100%)] text-white border-0"
+              : "btn-quiet text-[#295084]"
           }`}
         >
           <FaRegCommentDots />
           Comment
         </button>
-        <button className="chip-button btn-quiet px-4 py-2 text-sm font-semibold text-[#255149] flex items-center gap-2">
+        <button className="chip-button btn-quiet px-4 py-2 text-sm font-semibold text-[#295084] flex items-center gap-2">
           <FaShare />
           Share
         </button>

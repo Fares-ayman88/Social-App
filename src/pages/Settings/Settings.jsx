@@ -62,7 +62,7 @@ export default function Settings() {
           <p className="page-subtitle">Keep your account secure by updating your password regularly.</p>
         </div>
         <div className="surface-card max-w-xl mx-auto p-5 sm:p-7 rounded-2xl space-y-5">
-          <h3 className="text-xl font-semibold mb-2 text-[#173b33]">Change Password</h3>
+          <h3 className="text-xl font-semibold mb-2 text-[#1a2d52]">Change Password</h3>
 
           {errorMessage && <Alert color="danger" title={`Error: ${errorMessage}`} />}
           {successMessage && (
@@ -79,7 +79,7 @@ export default function Settings() {
               variant="bordered"
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2]",
               }}
               {...register("currentPassword")}
             />
@@ -94,7 +94,7 @@ export default function Settings() {
               variant="bordered"
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2]",
               }}
               {...register("newPassword")}
             />
@@ -109,7 +109,7 @@ export default function Settings() {
               variant="bordered"
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2]",
               }}
               {...register("confirmNewPassword")}
             />

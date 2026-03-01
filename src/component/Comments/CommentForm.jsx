@@ -39,7 +39,7 @@ export default function CommentForm({ postId }) {
       toast.success("Comment added successfully!", {
         duration: 3000,
         style: {
-          background: "#10b981",
+          background: "#2563eb",
           color: "#fff",
           fontSize: ".875rem",
           borderRadius: ".5rem",
@@ -144,7 +144,7 @@ export default function CommentForm({ postId }) {
           variant="bordered"
           classNames={{
             inputWrapper:
-              "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-xl data-[hover=true]:border-[#b8d9ce] pr-2",
+              "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-xl data-[hover=true]:border-[#b4cbf2] pr-2",
           }}
           endContent={
             <div className="flex items-center gap-1">
@@ -163,7 +163,7 @@ export default function CommentForm({ postId }) {
                   type="submit"
                   aria-label="send"
                   variant="ghost"
-                  className="!px-2 !min-w-0 !h-8 text-[#0f766e]"
+                  className="!px-2 !min-w-0 !h-8 text-[#2563eb]"
                 >
                   <AiOutlineSend className="text-lg" />
                 </AppButton>
@@ -191,7 +191,7 @@ export default function CommentForm({ postId }) {
             <Image
               src={imagePreview}
               alt="Comment preview"
-              className="rounded-xl object-cover border border-[#d5e6df]"
+              className="rounded-xl object-cover border border-[#d2e1fb]"
             />
             <AppButton
               type="button"

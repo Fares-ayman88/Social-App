@@ -73,7 +73,7 @@ export default function CreatePostForm({ queryKey }) {
       toast.success("Post added successfully!", {
         duration: 3000,
         style: {
-          background: "#10b981",
+          background: "#2563eb",
           color: "#fff",
           fontSize: ".875rem",
           borderRadius: ".5rem",
@@ -142,7 +142,7 @@ export default function CreatePostForm({ queryKey }) {
         <div className="flex items-center justify-between mb-3">
           <div>
             <p className="pill-indicator">Create Post</p>
-            <h3 className="mt-2 text-xl font-bold text-[#12372f]">What's new today?</h3>
+            <h3 className="mt-2 text-xl font-bold text-[#112447]">What's new today?</h3>
           </div>
         </div>
 
@@ -154,8 +154,8 @@ export default function CreatePostForm({ queryKey }) {
               maxLength={MAX_CHAR}
               classNames={{
                 inputWrapper:
-                  "bg-[#fbfefd] border border-[#d6e8e1] shadow-none rounded-2xl px-2 data-[hover=true]:border-[#b8d9ce]",
-                input: "text-[#14352f] text-[15px]",
+                  "bg-[#f8fbff] border border-[#d3e2fa] shadow-none rounded-2xl px-2 data-[hover=true]:border-[#b4cbf2]",
+                input: "text-[#15284a] text-[15px]",
               }}
               {...register("body")}
               isInvalid={!!errors.body}
@@ -172,7 +172,7 @@ export default function CreatePostForm({ queryKey }) {
               <CiImageOn size="18" />
             </AppButton>
 
-            <div className="text-right text-sm text-[#60776e] mt-1">
+            <div className="text-right text-sm text-[#62789b] mt-1">
               {watchedContent?.length || 0}/{MAX_CHAR}
             </div>
           </div>
@@ -195,7 +195,7 @@ export default function CreatePostForm({ queryKey }) {
                 <Image
                   src={imagePreview}
                   alt="Preview"
-                  className="rounded-xl object-cover border border-[#d6e8e1]"
+                  className="rounded-xl object-cover border border-[#d3e2fa]"
                 />
 
                 <AppButton
