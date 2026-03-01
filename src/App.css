@@ -1,0 +1,26 @@
+.app-section {
+  margin-top: 1.1rem;
+}
+
+.post-feed {
+  margin-top: 0.35rem;
+}
+
+.auth-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.headline-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #115e59;
+  background: #d9f3eb;
+  border: 1px solid #c1e8db;
+  border-radius: 999px;
+  padding: 0.28rem 0.68rem;
+}
